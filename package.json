@@ -9,14 +9,22 @@
     "@babel/core": "^7.9.6",
     "@babel/node": "^7.8.7",
     "@babel/preset-env": "^7.9.6",
+    "del": "^5.1.0",
     "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
     "morgan": "^1.10.0",
+    "node-sass": "^4.14.1",
     "nodemon": "^2.0.3",
     "pug": "^2.0.4",
     "socket.io": "^2.3.0"
   },
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/server"
+    "dev:server": "nodemon --exec babel-node src/server",
+    "build:styles": "gulp"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^3.1.3",
